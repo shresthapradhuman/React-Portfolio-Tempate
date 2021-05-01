@@ -4,7 +4,7 @@ function Information() {
     return (
         <div>
             <div className="Information">
-                This is Information
+                This is Information testing second
             </div>
         </div>
     )
