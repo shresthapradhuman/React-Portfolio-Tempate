@@ -93,3 +93,17 @@ export const Information = [
     ],
   },
 ];
+export const Info = [
+  {
+    desc:
+      "<strong>Hello! I'm Shrestha Pradhuman.</strong> Full Stack Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Wordpress, also I'm good at Magento. I love to talk with you about our unique.",
+    info: [
+      {
+        age: "31",
+        resident: "Nepal",
+        freelancer: "Available",
+        address: "Tokyo, Japan",
+      },
+    ],
+  },
+];
