@@ -13,10 +13,12 @@ import {
 } from "react-icons/ai";
 import {
   FaFacebook,
-  FaHtml5
+  FaHtml5,
+  FaBatteryHalf,
+  FaBatteryFull,
 } from "react-icons/fa";
 import { DiStackoverflow } from "react-icons/di";
-
+/**Navigation Settings */
 export const Navbar = [
   {
     title: "about",
@@ -44,7 +46,7 @@ export const Navbar = [
     icon: <SiMailDotRu />,
   },
 ];
-
+/** Profile Settings */
 export const Profile = [
   {
     image: "profile.jpg",
@@ -81,7 +83,7 @@ export const Profile = [
     ],
   },
 ];
-
+/**Information Settings */
 export const Information = [
   {
     desc:
@@ -96,20 +98,7 @@ export const Information = [
     ],
   },
 ];
-export const Info = [
-  {
-    desc:
-      "<strong>Hello! I'm Shrestha Pradhuman.</strong> Full Stack Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Wordpress, also I'm good at Magento. I love to talk with you about our unique.",
-    info: [
-      {
-        age: "31",
-        resident: "Nepal",
-        freelancer: "Available",
-        address: "Tokyo, Japan",
-      },
-    ],
-  },
-];
+/**Service Settings */
 export const Service = [
   {
     title: "Web Development",
@@ -128,5 +117,122 @@ export const Service = [
     description:
       "In the current times, the world is controlled by fingertips. Mobile apps are the most competent tool to optimize, enhance, increase your business operations. So, I can provide cross-browser and cross-platform supported mobile applications for your business.",
     icon: <AiOutlineMobile />,
+  },
+];
+/**Pricing Settings */
+export const Pricing = [
+  {
+    icon: <FaBatteryHalf />,
+    title: "Standard plan",
+    price: "22",
+    srvc: [
+      {
+        pages: "av, 10 pages",
+        cms: "na, cms",
+        form: "av, contact form",
+        domain: "av, .np",
+        hosting: "av, 500 MB",
+        chat: "na, chat integration",
+      },
+    ],
+  },
+  {
+    icon: <FaBatteryFull />,
+    title: "Premium plan",
+    price: "48",
+    srvc: [
+      {
+        pages: "av, 10 pages",
+        cms: "av, cms",
+        form: "av, Multiple form",
+        domain: "av, .com .net .org",
+        hosting: "av, 1 GB",
+        chat: "av, chat integration",
+      },
+    ],
+  },
+];
+/** Education Settings */
+export const Education = [
+  {
+    year: "2010-2013",
+    institute: "Brightland College",
+    country: "Nepal",
+    description: "Bachelor's Degree in Business Studies With Major Finance",
+  },
+  {
+    year: "2008-2010",
+    institute: "Meisei Institute Of Cybernetics",
+    country: "Japan",
+    description:
+      "Information Business Introduction, Office Software, Basic Programming, Linux, Web Design",
+  },
+  {
+    year: "2020/09-2020/10",
+    institute: "PHP SCHOOL",
+    country: "Ikebukuro, Japan",
+    description:
+      "Building PHP MVC Framework, Object Programming, PHP Framework Laravel.",
+  },
+];
+/**Experience Settings */
+export const Experience = [
+  {
+    year: "2020-Present",
+    position: "Web Programmer",
+    company: "Veriteworks.Inc",
+    description: "Building Magento Based E-commerce Website, Modules",
+  },
+  {
+    year: "2020/9-2020/12",
+    position: "Convience Store Manager",
+    company: "Family Mart",
+    description:
+      "Managing and Handling the Convience Store. Staffing, Checking Stocks And Ordering Stock etc.",
+  },
+  {
+    year: "2017-2020",
+    position: "Regular Employee",
+    company: "FunToFun.Inc",
+    description:
+      "Handling Phone Calls From Customer. Helping people to find the part time jobs etc.",
+  },
+];
+
+export const Coding = [
+  {
+    title: "PHP",
+    percentage: "70",
+  },
+  {
+    title: "HTML/CSS/JQuery",
+    percentage: "80",
+  },
+  {
+    title: "React JS",
+    percentage: "70",
+  },
+  {
+    title: "Python",
+    percentage: "60",
+  },
+];
+
+export const Language = [
+  {
+    title: "Nepali",
+    width: "90%",
+  },
+  {
+    title: "English",
+    width: "80%",
+  },
+  {
+    title: "Hindi",
+    width: "90%",
+  },
+  {
+    title: "Japanese",
+    width: "70%",
   },
 ];

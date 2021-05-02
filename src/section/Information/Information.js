@@ -1,5 +1,5 @@
 import React from 'react'
-import {Info as Data } from "../../data/Setting";
+import {Information as Data } from "../../data/Setting";
 import "./Information.scss"
 
 function Information() {

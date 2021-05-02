@@ -1,0 +1,57 @@
+.circle {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  &__content {
+    padding: 1rem;
+  }
+  &__bar {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    box-shadow: -3px -3px 7px #eeeeee, 3px 3px 5px rgba(94, 104, 121, 95%);
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    svg {
+      fill: none;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    circle {
+      position: absolute;
+      transform: scale(0.96);
+      transform-origin: center;
+      stroke-width: 17px;
+      stroke-dasharray: 314px;
+
+    }
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-30%, -50%);
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+  &__bar::after {
+    content: "";
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-shadow: inset -3px -3px 7px #eeeeee,
+      inset 3px 3px 5px rgba(94, 104, 121, 95%);
+  }
+  &__title{
+    text-transform: uppercase;
+  }
+}

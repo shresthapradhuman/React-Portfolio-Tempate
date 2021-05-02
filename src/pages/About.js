@@ -18,11 +18,11 @@ function About() {
         <div className="box">
           <div className="box__header">
             <div className="box__header-title">
-              <span>My Services</span>
+              <span>My </span>Services
             </div>
           </div>
           <div className="box__body">
-              <Service/>
+            <Service />
           </div>
         </div>
       </>
