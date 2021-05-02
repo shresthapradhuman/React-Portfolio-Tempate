@@ -54,20 +54,12 @@ export const Profile = [
     postion: ["Freelancer", "Frontend Developer", "Backend Developer", "Programmer"  ],
     social: [
       {
-        icon: <DiStackoverflow />,
-        url: "https://stackoverflow.com/",
-      },
-      {
         icon: <AiFillGithub />,
         url: "https://github.com/",
       },
       {
         icon: <AiFillYoutube />,
         url: "https://www.youtube.com/",
-      },
-      {
-        icon: <AiFillTwitterCircle />,
-        url: "https://www.twitter.com/",
       },
       {
         icon: <FaFacebook />,
