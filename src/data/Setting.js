@@ -8,9 +8,12 @@ import {
   AiFillTwitterCircle,
   AiFillYoutube,
   AiOutlineCloudDownload,
+  AiOutlineSetting,
+  AiOutlineMobile,
 } from "react-icons/ai";
 import {
   FaFacebook,
+  FaHtml5
 } from "react-icons/fa";
 import { DiStackoverflow } from "react-icons/di";
 
@@ -105,5 +108,25 @@ export const Info = [
         address: "Tokyo, Japan",
       },
     ],
+  },
+];
+export const Service = [
+  {
+    title: "Web Development",
+    description:
+      "I can provide mobile responsive, cross-browser, and cross-platform web development services. Starting from basic website designs, including CMS and online store building to highly complex business website apps and design solutions. we provide you best web solutions.",
+    icon: <FaHtml5 />,
+  },
+  {
+    title: "Domain & Hosting",
+    description:
+      "I provide A1 domain and hosting service with features of security, bandwidth and storage scalability, migration assistance, and great technical support at a very reasonable cost and renewal fees. I offer you a secure and hassle-free foundation for your online presence.",
+    icon: <AiOutlineSetting />,
+  },
+  {
+    title: "Mobile Application",
+    description:
+      "In the current times, the world is controlled by fingertips. Mobile apps are the most competent tool to optimize, enhance, increase your business operations. So, I can provide cross-browser and cross-platform supported mobile applications for your business.",
+    icon: <AiOutlineMobile />,
   },
 ];

@@ -1,17 +1,15 @@
 import React from 'react'
-import {Info as Data} from '../../data/Setting';
-import './Information.scss'
+import {Info as Data } from "../../data/Setting";
+import "./Information.scss"
 
 function Information() {
     return (
       <>
-        {Data.map((item, index) => {
+      {Data.map((item, index)=>{
           return (
             <div className="information" key={index}>
-              <p
-                className="information__desc"
-                dangerouslySetInnerHTML={{ __html: item.desc }}
-              ></p>
+              <p className="information__desc" dangerouslySetInnerHTML={ { __html: item.desc } }>
+              </p>
               {item.info.map((item, index) => {
                 return (
                   <ul key={index}>
@@ -40,7 +38,7 @@ function Information() {
               })}
             </div>
           );
-        })}
+      })}
       </>
     );
 }
