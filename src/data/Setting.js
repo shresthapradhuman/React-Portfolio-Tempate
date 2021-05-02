@@ -5,7 +5,6 @@ import { BsBrush } from "react-icons/bs";
 import { SiMailDotRu } from "react-icons/si";
 import {
   AiFillGithub,
-  AiFillTwitterCircle,
   AiFillYoutube,
   AiOutlineCloudDownload,
   AiOutlineSetting,
@@ -17,7 +16,6 @@ import {
   FaBatteryHalf,
   FaBatteryFull,
 } from "react-icons/fa";
-import { DiStackoverflow } from "react-icons/di";
 /**Navigation Settings */
 export const Navbar = [
   {
