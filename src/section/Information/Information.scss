@@ -14,6 +14,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width:768px) {
+      flex-direction: column;
+    }
   }
   li {
     flex-basis: 50%;

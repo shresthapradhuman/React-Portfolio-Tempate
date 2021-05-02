@@ -1,6 +1,5 @@
 import React from 'react'
 import GoogleMap from '../components/GoogleMap/GoogleMap'
-import "../styles/pages/Contact.scss";
 import { Information as Data } from "../data/Setting";
 import Form from '../components/Form/Contact/Form';
 

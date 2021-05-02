@@ -15,7 +15,7 @@ function GoogleMap() {
     );
   };
   return (
-    <div>
+    <>
       <div className="map__container">
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyAd80zHaQ1mgqSM_8lnmNLGipdIlh7RbHE" }}
@@ -33,7 +33,7 @@ function GoogleMap() {
           />
         </GoogleMapReact>
       </div>
-    </div>
+    </>
   );
 }
 
