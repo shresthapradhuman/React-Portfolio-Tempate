@@ -94,6 +94,8 @@ export const Information = [
         resident: "Nepal",
         freelancer: "Available",
         address: "Tokyo, Japan",
+        email:'ShresthaPradhuman2020@gmail.com',
+        contact: '+8107084252738'
       },
     ],
   },

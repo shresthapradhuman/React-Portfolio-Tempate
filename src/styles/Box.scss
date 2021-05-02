@@ -43,4 +43,29 @@
       }
     }
   }
+  &__content{
+    ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    li{
+      flex-basis:auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.9rem;
+      text-align: left;
+      &:nth-child(1), &:nth-child(3){
+        margin-right: 0.9rem;
+        flex-basis: 40%;
+      }
+    }
+    span:nth-child(1){
+      margin-right: 1rem;
+    }
+  }
+  &__body{
+    margin-bottom: 1rem;
+  }
 }
