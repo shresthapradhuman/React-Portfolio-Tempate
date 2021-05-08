@@ -18,7 +18,7 @@ function App() {
             <section className="header">
               <Navbar />
             </section>
-            <section className="profile">
+            <section className="card">
               <Profile />
             </section>
             <section className="content">

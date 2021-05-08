@@ -8,16 +8,16 @@ function index() {
     <>
       {Data.map((user, index) => {
         return (
-          <div className="card" key={index}>
-            <div className="card__image">
+          <div className="profile" key={index}>
+            <div className="profile__image">
               <img
                 src={require(`../../../images/Profile/${user.image}`).default}
                 alt="profile"
                 style={{ width: "100%" }}
               />
             </div>
-            <div className="card__name">{user.name}</div>
-            <div className="card__position">
+            <div className="profile__name">{user.name}</div>
+            <div className="profile__position">
               <Typewriter
                 options={{
                   strings: user.postion,
@@ -28,7 +28,7 @@ function index() {
               />
               {/* {user.postion} */}
             </div>
-            <div className="card__social">
+            <div className="profile__social">
               <ul>
                 {user.social.map((icon, index) => {
                   return (
@@ -43,11 +43,11 @@ function index() {
             </div>
             {user.download.map((item, index) => {
               return (
-                <div className="card__download" key={index}>
+                <div className="profile__download" key={index}>
                   <a href={item.url} target="_blank" rel="noreferrer">
                     {item.title}
                   </a>
-                  <span className="card__icon">{item.icon}</span>
+                  <span className="profile__icon">{item.icon}</span>
                 </div>
               );
             })}

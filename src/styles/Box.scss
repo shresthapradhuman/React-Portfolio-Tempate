@@ -33,7 +33,7 @@
         #dddddd 0%,
         rgba(255, 255, 255, 0) 80%
       );
-      @media screen and (max-width:768px) {
+      @media screen and (max-width: 768px) {
         left: -10px;
       }
     }
@@ -42,45 +42,71 @@
       font-size: 1.25rem;
       font-weight: 500;
       span {
-        color: #E96F38;
+        color: #e96f38;
       }
-      @media screen and (max-width:768px) {
+      @media screen and (max-width: 768px) {
         flex-basis: 100%;
       }
     }
+    &-input {
+      border-radius: 4px;
+      border: 2px solid #ccc;
+      font-size: 1rem;
+      background-position: 5px 5px;
+      padding: 3px 0 3px 30px;
+      background-color: white;
+      background-image: url("../images/Assets/searchicon.png");
+      background-repeat: no-repeat;
+      &:focus{
+        outline: none;
+        
+      }
+      &:hover{
+        border-color:#E96F38;
+      }
+    }
+    
   }
-  &__content{
-    ul{
+  &__content {
+    ul {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       list-style: none;
-      @media screen and (max-width:768px) {
+      @media screen and (max-width: 768px) {
         flex-direction: column;
       }
     }
-    li{
-      flex-basis:auto;
+    li {
+      flex-basis: auto;
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.9rem;
-      @media screen and (max-width:768px) {
+      @media screen and (max-width: 768px) {
         justify-content: unset;
         flex-direction: column;
       }
-      &:nth-child(1), &:nth-child(3){
+      &:nth-child(1),
+      &:nth-child(3) {
         margin-right: 0.9rem;
         flex-basis: 40%;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
           flex-basis: 100%;
         }
       }
     }
-    span:nth-child(1){
+    span:nth-child(1) {
       margin-right: 1rem;
     }
   }
-  &__body{
+  &__body {
     margin-bottom: 1rem;
+    .blog {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
   }
 }
