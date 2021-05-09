@@ -1,0 +1,60 @@
+.detail {
+  $root: &;
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+  }
+  &__metas {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0.5rem 0.5rem 0.4rem 0;
+      font-size: 0.79rem;
+      border: 0.3px solid #323232;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+  &__body {
+    #{$root}__image {
+      max-width: 100%;
+      height: auto;
+    }
+    #{$root}__content {
+      font-size: 1rem;
+      text-align: justify;
+      line-height: 1.7;
+      color: #323232;
+    }
+  }
+  &__footer {
+    margin: 0.5rem 0;
+    #{$root}__share {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      &-label {
+        color: black;
+        font-size: 20px;
+        margin-right: 1rem;
+        text-transform: uppercase;
+      }
+      &-icon {
+        display: flex;
+        list-style: none;
+        li {
+          margin-right: 0.4rem;
+          padding: 0.3rem 0;
+          color:#F39369;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

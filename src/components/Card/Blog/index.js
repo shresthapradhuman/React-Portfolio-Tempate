@@ -10,8 +10,8 @@ function index(props) {
         <div className="blog__thumb">
           <img
             className="blog__image"
-            src={require("../../../images/Blog/" + props.image).default}
-            alt=""
+            src={"/images/Blog/" + props.image}
+            alt={props.image}
           />
           <div className="blog__content">
             <h3 className="blog__title">{props.title}</h3>
@@ -30,7 +30,7 @@ function index(props) {
           <div className="blog__excerpt">
             <p>{props.blogText.slice(0, 180)}</p>
           </div>
-          <Link to="" className="blog__btn">
+          <Link to={props.link + "/" + props.slug} className="blog__btn">
             Explore
           </Link>
         </div>

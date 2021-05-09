@@ -57,15 +57,22 @@
       background-color: white;
       background-image: url("../images/Assets/searchicon.png");
       background-repeat: no-repeat;
-      &:focus{
-        outline: none;
-        
+      @media screen and (max-width: 768px) {
+        width: 10px;
       }
-      &:hover{
-        border-color:#E96F38;
+      &:focus {
+        outline: none;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      &:hover {
+        border-color: #e96f38;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
-    
   }
   &__content {
     ul {

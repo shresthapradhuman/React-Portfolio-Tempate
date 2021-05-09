@@ -1,6 +1,6 @@
 import React from 'react'
-import Information from '../section/Information/Information'
-import Service from '../section/Service/Service'
+import Information from '../../section/Information/Information'
+import Service from '../../section/Service/Service'
 
 function About() {
     return (

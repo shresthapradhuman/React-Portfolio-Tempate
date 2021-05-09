@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import BlogCard from "../components/Card/Blog";
-import data from "../data/blog.json";
+import { useRouteMatch } from "react-router";
+import BlogCard from "../../components/Card/Blog";
+import data from "../../data/blog.json";
 function Blog() {
   const [post, setPost] = useState(data.blog);
   const [message, setMessage] = useState();
+  let {url} = useRouteMatch();
   const searchHandler = (e) => {
     let searchValue = e.target.value;
     if (searchValue) {
@@ -18,7 +20,6 @@ function Blog() {
       setMessage(false);
     }
   };
-  console.log(post);
   return (
     <>
       <div className="box">
@@ -37,7 +38,11 @@ function Blog() {
         </div>
         <div className="box__body">
           <div className="blog">
-            {message === true ? <p className="box__error">Sorry No Result Found !</p> : ''}
+            {message === true ? (
+              <p className="box__error">Sorry No Result Found !</p>
+            ) : (
+              ""
+            )}
             {post.map((blog) => {
               return (
                 <BlogCard
@@ -46,6 +51,8 @@ function Blog() {
                   blogCategory={blog.blogCategory}
                   blogText={blog.blogText}
                   image={blog.blogImage}
+                  slug={blog.slug}
+                  link = {url}
                   key={blog.id}
                 />
               );
