@@ -23,6 +23,7 @@ function Detail(props) {
     }, [post, props.match.params.slug]);
     return (
       <>
+        <p style={{display:"none"}}>{slug}</p>
         <div className="box">
           <div className="box__header">
             <div className="box__header-title">
@@ -60,6 +61,7 @@ function Detail(props) {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </>
