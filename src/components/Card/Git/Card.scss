@@ -1,0 +1,43 @@
+.git {
+  &-box {
+    box-sizing: border-box;
+    flex-basis: 49%;
+    background-color: #546e7a;
+    margin-left: 0.23rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 560px) {
+      flex-basis: 98%;
+    }
+  }
+  &-title,
+  &-content,
+  &-lang {
+    padding-left: 0.9rem;
+    line-height: 1.51;
+    font-weight: lighter;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+  &-title {
+    text-transform: capitalize;
+    word-break: break-all;
+    
+    border: 1px solid;
+  }
+  &-content {
+    color: #fff;
+    font-size: medium;
+    height: 150px;
+  }
+  &-link {
+    text-decoration: none;
+  }
+  &-lang {
+    color: #f5d1a3;
+    display: block;
+    font-weight: normal;
+    text-align: right;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
