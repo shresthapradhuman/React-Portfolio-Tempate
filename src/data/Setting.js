@@ -34,8 +34,8 @@ export const Navbar = [
     icon: <BsBrush />,
   },
   {
-    title: "blog",
-    path: "/blog",
+    title: "vlog",
+    path: "/vlog",
     icon: <IoIcons.IoChatboxEllipses />,
   },
   {
@@ -74,13 +74,15 @@ export const Profile = [
   },
 ];
 /**Information Settings */
+const d = new Date()
+const year = d.getFullYear();
 export const Information = [
   {
     desc:
       "<strong>Hello! I'm Shrestha Pradhuman.</strong> Full Stack Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Wordpress, also I'm good at Magento. I love to talk with you about our unique.",
     info: [
       {
-        age: "31",
+        age: year - 1989,
         resident: "Nepal",
         freelancer: "Available",
         address: "Tokyo, Japan",
