@@ -199,7 +199,7 @@ export const Coding = [
     percentage: "70",
   },
   {
-    title: "HTML/CSS/JQuery",
+    title: "HTML/CSS/JS",
     percentage: "80",
   },
   {
