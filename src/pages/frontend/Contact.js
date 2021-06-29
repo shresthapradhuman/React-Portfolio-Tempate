@@ -14,7 +14,7 @@ function Contact() {
           </div>
           <div className="box__body">
             <div className="box__map">
-              <GoogleMap />
+              {/* <GoogleMap /> */}
             </div>
             <div className="box__content">
               {Data.map((item)=>(
@@ -28,10 +28,6 @@ function Contact() {
                        <li>
                          <span>Email : </span>
                          <span>{info.email}</span>
-                       </li>
-                       <li>
-                         <span>Phone : </span>
-                         <span>{info.contact}</span>
                        </li>
                        <li>
                          <span>Freelance : </span>
