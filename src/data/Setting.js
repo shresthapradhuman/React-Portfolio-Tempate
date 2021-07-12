@@ -10,7 +10,6 @@ import {
   AiOutlineMobile,
 } from "react-icons/ai";
 import {
-  FaFacebook,
   FaHtml5,
   FaBatteryHalf,
   FaBatteryFull,
