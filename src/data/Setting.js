@@ -5,7 +5,6 @@ import { BsBrush } from "react-icons/bs";
 import { SiMailDotRu } from "react-icons/si";
 import {
   AiFillGithub,
-  AiFillYoutube,
   AiOutlineCloudDownload,
   AiOutlineSetting,
   AiOutlineMobile,
@@ -15,6 +14,7 @@ import {
   FaHtml5,
   FaBatteryHalf,
   FaBatteryFull,
+  FaBloggerB,
 } from "react-icons/fa";
 /**Navigation Settings */
 export const Navbar = [
@@ -49,19 +49,20 @@ export const Profile = [
   {
     image: "profile.jpg",
     name: "Shrestha Pradhuman",
-    postion: ["Freelancer", "Frontend Developer", "Backend Developer", "Programmer"  ],
+    postion: [
+      "Freelancer",
+      "Frontend Developer",
+      "Backend Developer",
+      "Programmer",
+    ],
     social: [
       {
         icon: <AiFillGithub />,
-        url: "https://github.com/",
+        url: "https://github.com/shresthapradhuman",
       },
       {
-        icon: <AiFillYoutube />,
-        url: "https://www.youtube.com/",
-      },
-      {
-        icon: <FaFacebook />,
-        url: "https://www.facebook.com/",
+        icon: <FaBloggerB />,
+        url: "https://codewithshrestha.blogspot.com/",
       },
     ],
     download: [
