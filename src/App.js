@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,8 +15,15 @@ import Work from "./pages/frontend/Work";
 import Blog from "./pages/frontend/Blog";
 import Detail from "./pages/frontend/Detail";
 import Contact from "./pages/frontend/Contact";
+import ReactGA from "react-ga";
+import { GA } from "./data/Setting";
+
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize(GA.REACT_APP_GA_TRACKING_CODE);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  },[]);
   return (
     <>
       <div className="container">

@@ -74,20 +74,19 @@ export const Profile = [
   },
 ];
 /**Information Settings */
-const d = new Date()
+const d = new Date();
 const year = d.getFullYear();
 export const Information = [
   {
-    desc:
-      "<strong>Hello! I'm Shrestha Pradhuman.</strong> Full Stack Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Wordpress, also I'm good at Magento. I love to talk with you about our unique.",
+    desc: "<strong>Hello! I'm Shrestha Pradhuman.</strong> Full Stack Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Wordpress, also I'm good at Magento. I love to talk with you about our unique.",
     info: [
       {
         age: year - 1989,
         resident: "Nepal",
         freelancer: "Available",
         address: "Tokyo, Japan",
-        email:'ShresthaPradhuman2020@gmail.com',
-        contact: '+8107084252738'
+        email: "ShresthaPradhuman2020@gmail.com",
+        contact: "+8107084252738",
       },
     ],
   },
@@ -230,3 +229,7 @@ export const Language = [
     width: "70%",
   },
 ];
+
+export const GA = {
+  REACT_APP_GA_TRACKING_CODE: "UA-202017209-1",
+};
