@@ -33,8 +33,8 @@ export const Navbar = [
     icon: <BsBrush />,
   },
   {
-    title: "vlog",
-    path: "/vlog",
+    title: "blog",
+    path: "/blog",
     icon: <IoIcons.IoChatboxEllipses />,
   },
   {

@@ -4,19 +4,20 @@ import { useRouteMatch } from "react-router";
 import BlogCard from "../../components/Card/Blog";
 import data from "../../data/blog.json";
 function Blog() {
-  const [post, setPost] = useState(data.blog);
+  const [post, setPost] = useState(data);
   const [message, setMessage] = useState();
-  let {url} = useRouteMatch();
+  let { url } = useRouteMatch();
+
   const searchHandler = (e) => {
     let searchValue = e.target.value;
     if (searchValue) {
-      let result = data.blog.filter((item) =>
+      let result = data.filter((item) =>
         item.blogTitle.toLowerCase().includes(searchValue.toLowerCase())
       );
       setMessage(result.length > 0 ? false : true)
       setPost(result);
     } else {
-      setPost(data.blog);
+      setPost(data);
       setMessage(false);
     }
   };
@@ -25,7 +26,7 @@ function Blog() {
       <div className="box">
         <div className="box__header">
           <div className="box__header-title">
-            <span>V</span>log
+            <span>B</span>log
           </div>
           <div className="box__header-search">
             <input

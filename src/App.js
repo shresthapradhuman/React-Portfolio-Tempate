@@ -45,8 +45,8 @@ function App() {
                     <Route path="/about" component={About} />
                     <Route path="/resume" component={Resume} />
                     <Route path="/work" component={Work} />
-                    <Route path="/vlog" exact component={Blog} />
-                    <Route path={`/vlog/:slug`} component={Detail} />
+                    <Route path="/blog" exact component={Blog} />
+                    <Route path={`/blog/:slug`} component={Detail} />
                     <Route path="/contact" component={Contact} />
                   </Switch>
                 </div>
