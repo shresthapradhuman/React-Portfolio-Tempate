@@ -3,6 +3,7 @@ import '../../styles/pages/Detail.scss'
 import data from '../../data/blog.json'
 import { useState, useEffect } from 'react';
 import { FaFacebookF, FaTwitter, FaStackOverflow } from "react-icons/fa";
+import Markdown from "markdown-to-jsx";
 
 function Detail(props) {
     const [post, setPost] = useState({
@@ -17,20 +18,20 @@ function Detail(props) {
     const [slug, setSlug] = useState("");
     useEffect(() => {
       const slug = props.match.params.slug;
-      const post = data.blog.find((post) => post.slug === slug);
+      const post = data.find((post) => post.slug === slug);
       setPost(post);
       setSlug(slug);
     }, [post, props.match.params.slug]);
     return (
       <>
-        <p style={{display:"none"}}>{slug}</p>
+        <p style={{ display: "none" }}>{slug}</p>
         <div className="box">
           <div className="box__header">
             <div className="box__header-title">
               <span>Blog</span> Detail
             </div>
           </div>
-          <div className="box__body" style={{marginBottom:"0"}}>
+          <div className="box__body" style={{ marginBottom: "0" }}>
             <div className="detail__box">
               <div className="detail__header">
                 <h2 className="detail__title">{post.blogTitle}</h2>
@@ -42,26 +43,31 @@ function Detail(props) {
               </div>
               <div className="detail__body">
                 <img
-                  src={"/images/Blog/" + post.blogImage}
+                  src={post.blogImage}
                   alt={post.blogImage}
                   className="detail__image"
                 />
                 <div className="detail__content">
-                  {post.blogText}
+                  <Markdown>{post.blogText}</Markdown>
                 </div>
               </div>
               <div className="detail__footer">
                 <div className="detail__share">
                   <p className="detail__share-label">Share On</p>
                   <ul className="detail__share-icon">
-                    <li><FaFacebookF/></li>
-                    <li><FaTwitter/></li>
-                    <li><FaStackOverflow/></li>
+                    <li>
+                      <FaFacebookF />
+                    </li>
+                    <li>
+                      <FaTwitter />
+                    </li>
+                    <li>
+                      <FaStackOverflow />
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </>
