@@ -26,7 +26,7 @@ function Blog() {
       <div className="box">
         <div className="box__header">
           <div className="box__header-title">
-            <span>V</span>log
+            <span>B</span>log
           </div>
           <div className="box__header-search">
             <input
