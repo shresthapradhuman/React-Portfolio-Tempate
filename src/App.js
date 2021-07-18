@@ -46,7 +46,7 @@ function App() {
                     <Route path="/resume" component={Resume} />
                     <Route path="/work" component={Work} />
                     <Route path="/blog" exact component={Blog} />
-                    <Route path={`/vlog/:slug`} component={Detail} />
+                    <Route path={`/blog/:slug`} component={Detail} />
                     <Route path="/contact" component={Contact} />
                   </Switch>
                 </div>

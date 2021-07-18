@@ -39,7 +39,6 @@ function Blog() {
         </div>
         <div className="box__body">
           <div className="blog">
-            {console.log(post)}
             {message === true ? (
               <p className="box__error">Sorry No Result Found !</p>
             ) : (

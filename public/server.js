@@ -15,9 +15,9 @@ const months = {
   "07": "July",
   "08": "August",
   "09": "September",
-  10: "October",
-  11: "November",
-  12: "December",
+  "10": "October",
+  "11": "November",
+  "12": "December",
 };
 
 const formatDate = (date) => {
@@ -86,7 +86,7 @@ const getPosts = () => {
         const timestamp = date.getTime() / 1000;
         const slug = metadata.blogTitle.replace(/\s+/g, "-").toLowerCase();
         post = {
-          id: timestamp,
+          id: i+1,
           blogCategory: metadata.category ? metadata.category : "Not Available",
           blogTitle: metadata.blogTitle ? metadata.blogTitle : "No title given",
           slug: metadata.blogTitle ? slug : "Not Available",
