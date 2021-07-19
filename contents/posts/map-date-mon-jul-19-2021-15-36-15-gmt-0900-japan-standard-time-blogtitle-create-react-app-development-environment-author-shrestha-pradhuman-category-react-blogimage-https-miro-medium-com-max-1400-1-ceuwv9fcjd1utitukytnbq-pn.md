@@ -38,5 +38,3 @@ $ npm start or yarn start
 ```
 
 Let's check is it working or not. In the browser address bar type http://localhost:3000/. If It displays like this then It's ready to work on it.
-
-![react-starter-page](https://1.bp.blogspot.com/-sKKvaZku2Qc/YPGdJi6VQOI/AAAAAAAAAAM/okcmAskqucsMPXOGcGMvAFrbVXDT7fgGQCLcBGAsYHQ/s16000/react-success-screen%2B%25281%2529.png "react-starter-page")
