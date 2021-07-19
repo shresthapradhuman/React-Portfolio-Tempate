@@ -50,8 +50,8 @@ export const Profile = [
     name: "Shrestha Pradhuman",
     postion: [
       "Freelancer",
-      "Frontend Developer",
-      "Backend Developer",
+      "Front-end Developer",
+      "Back-end Developer",
       "Programmer",
     ],
     social: [
