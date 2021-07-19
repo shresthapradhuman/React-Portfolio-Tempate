@@ -3,8 +3,8 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 # These lines should *not* be indented
-media_folder: "public/images/blog" 
-public_folder: "/images/blog" 
+media_folder: "public/images/blog"
+public_folder: "/images/blog"
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
@@ -15,23 +15,19 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "blogTitle", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      # - {label: "Category", name: "category", widget: "string"}
-      - label: 'Categories'
-        name: 'categories'
-        widget: 'list'
-        required: false
-        fields:
-          - label: 'Category'
-            name: 'category'
-            widget: 'relation'
-            collection: 'categories'
-            searchFields: ['title']
-            valueField: 'title'
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Thumbnail", name: "blogImage", widget: "image", require}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "blogTitle", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "relation",
+          collection: "categories",
+          searchFields: ["title"],
+          displayFields: ["title"],
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Thumbnail", name: "blogImage", widget: "image", require }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "categories"
     label: "Categories"
     editor:
@@ -40,4 +36,4 @@ collections:
     slug: "{{slug}}"
     create: true
     fields:
-      - { label: "Title", name: "categoryTitle", widget: 'string'}
+      - { label: "Title", name: "title", widget: "string" }
