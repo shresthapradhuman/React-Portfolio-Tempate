@@ -24,7 +24,7 @@ collections:
   - name: "categories"
     label: "Categories"
     editor:
-      preview:false
+      preview: false
     folder: "contents/categories"
     slug: "{{slug}}"
     create: true
