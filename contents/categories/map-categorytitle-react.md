@@ -1,3 +1,3 @@
 ---
-categoryTitle: React
+categoryTitle: Frontend
 ---
