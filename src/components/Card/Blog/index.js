@@ -25,7 +25,7 @@ function index(props) {
         <div className="blog__body">
           <div className="blog__category">{props.blogCategory}</div>
           <div className="blog__excerpt">
-            <Markdown>{props.blogText.slice(0, 180)}</Markdown>
+            <Markdown>{props.blogText.slice(0, 100)}</Markdown>
           </div>
           <Link to={props.link + "/" + props.slug} className="blog__btn">
             Explore
