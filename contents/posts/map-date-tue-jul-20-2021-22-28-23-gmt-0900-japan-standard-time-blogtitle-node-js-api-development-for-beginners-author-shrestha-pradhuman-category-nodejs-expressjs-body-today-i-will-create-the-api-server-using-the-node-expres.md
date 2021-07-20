@@ -9,11 +9,17 @@ Today I will create the API server using the Node ExpressJS framework. Here I wi
 
 Open Terminal and create a project folder.
 
+
+
 ```
 $ mkdir express-server
 ```
 
+
+
 Inside project folder initialize node package module.
+
+
 
 ```
 $ npm init
