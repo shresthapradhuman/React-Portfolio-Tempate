@@ -6,7 +6,6 @@ import { SiMailDotRu } from "react-icons/si";
 import {
   AiFillGithub,
   AiOutlineCloudDownload,
-  AiOutlineSetting,
   AiOutlineMobile,
 } from "react-icons/ai";
 import {
@@ -51,8 +50,7 @@ export const Profile = [
     postion: [
       "Freelancer",
       "Front-end Developer",
-      "Back-end Developer",
-      "Programmer",
+      "Back-end Developer"
     ],
     social: [
       {
@@ -78,14 +76,14 @@ const d = new Date();
 const year = d.getFullYear();
 export const Information = [
   {
-    desc: "<strong>Hello! I'm Shrestha Pradhuman.</strong> Full Stack Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Wordpress, also I'm good at Magento. I love to talk with you about our unique.",
+    desc: "<strong>Hello! I'm Shrestha Pradhuman.</strong> Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Magento, also I'm good at WordPress. I love to talk with you about our unique.",
     info: [
       {
         age: year - 1989,
         resident: "Nepal",
         freelancer: "Available",
         address: "Tokyo, Japan",
-        email: "ShresthaPradhuman2020@gmail.com",
+        email: "ShresthaPradhuman2018@gmail.com",
         contact: "+8107084252738",
       },
     ],
@@ -94,55 +92,16 @@ export const Information = [
 /**Service Settings */
 export const Service = [
   {
-    title: "Web Development",
+    title: "Web Application",
     description:
-      "I can provide mobile responsive, cross-browser, and cross-platform web development services. Starting from basic website designs, including CMS and online store building to highly complex business website apps and design solutions. we provide you best web solutions.",
+      "I can provide mobile responsive, cross-browser, and cross-platform web development services. Starting from basic website designs, including CMS and online store building to highly complex business website apps and design solutions. I can provide you best web solutions.",
     icon: <FaHtml5 />,
-  },
-  {
-    title: "Domain & Hosting",
-    description:
-      "I provide A1 domain and hosting service with features of security, bandwidth and storage scalability, migration assistance, and great technical support at a very reasonable cost and renewal fees. I offer you a secure and hassle-free foundation for your online presence.",
-    icon: <AiOutlineSetting />,
   },
   {
     title: "Mobile Application",
     description:
       "In the current times, the world is controlled by fingertips. Mobile apps are the most competent tool to optimize, enhance, increase your business operations. So, I can provide cross-browser and cross-platform supported mobile applications for your business.",
     icon: <AiOutlineMobile />,
-  },
-];
-/**Pricing Settings */
-export const Pricing = [
-  {
-    icon: <FaBatteryHalf />,
-    title: "Standard plan",
-    price: "22",
-    srvc: [
-      {
-        pages: "av, 10 pages",
-        cms: "na, cms",
-        form: "av, contact form",
-        domain: "av, .np",
-        hosting: "av, 500 MB",
-        chat: "na, chat integration",
-      },
-    ],
-  },
-  {
-    icon: <FaBatteryFull />,
-    title: "Premium plan",
-    price: "48",
-    srvc: [
-      {
-        pages: "av, 10 pages",
-        cms: "av, cms",
-        form: "av, Multiple form",
-        domain: "av, .com .net .org",
-        hosting: "av, 1 GB",
-        chat: "av, chat integration",
-      },
-    ],
   },
 ];
 /** Education Settings */
@@ -158,14 +117,14 @@ export const Education = [
     institute: "Meisei Institute Of Cybernetics",
     country: "Japan",
     description:
-      "Information Business Introduction, Office Software, Basic Programming, Linux, Web Design",
+      "Business Introduction, Office Software, Basic Programming, Linux OS Basic Operation, Web Development",
   },
   {
     year: "2020/09-2020/10",
     institute: "PHP SCHOOL",
     country: "Ikebukuro, Japan",
     description:
-      "Building PHP MVC Framework, Object Programming, PHP Framework Laravel.",
+      "PHP Basic, MVC Model, Object Oriented Programming, PHP Framework Laravel.",
   },
 ];
 /**Experience Settings */
@@ -174,14 +133,14 @@ export const Experience = [
     year: "2020-Present",
     position: "Web Programmer",
     company: "Veriteworks.Inc",
-    description: "Building Magento Based E-commerce Website, Modules",
+    description: "Developing themes and modules for Magento platform based e-commerce websites",
   },
   {
     year: "2020/9-2020/12",
-    position: "Convience Store Manager",
+    position: "Convience Store Assistant",
     company: "Family Mart",
     description:
-      "Managing and Handling the Convience Store. Staffing, Checking Stocks And Ordering Stock etc.",
+      "Stock Order Placement, Banking Transaction, Staff Shift Management, Customer Dealing, and Other Daily Jobs",
   },
   {
     year: "2017-2020",
@@ -194,35 +153,35 @@ export const Experience = [
 
 export const Coding = [
   {
-    title: "PHP",
-    percentage: "70",
-  },
-  {
     title: "HTML/CSS/JS",
-    percentage: "80",
+    percentage: "90",
   },
   {
-    title: "React JS",
+    title: "PHP/NodeJS/Python",
     percentage: "70",
   },
   {
-    title: "Python",
-    percentage: "60",
+    title: "MySQl/MongoDB",
+    percentage: "65",
+  },
+  {
+    title: "BootStrap/React",
+    percentage: "75",
   },
 ];
 
 export const Language = [
   {
     title: "Nepali",
-    width: "90%",
+    width: "95%",
+  },
+  {
+    title: "Hindi",
+    width: "95%",
   },
   {
     title: "English",
     width: "80%",
-  },
-  {
-    title: "Hindi",
-    width: "90%",
   },
   {
     title: "Japanese",
