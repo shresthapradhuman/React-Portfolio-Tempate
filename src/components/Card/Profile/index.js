@@ -2,6 +2,7 @@ import React from "react";
 import "./Profile.scss";
 import { Profile as Data } from "../../../data/Setting";
 import Typewriter from "typewriter-effect";
+import resume from "../../../download/resume.pdf"
 
 function index() {
   return (
@@ -45,7 +46,7 @@ function index() {
             {user.download.map((item, index) => {
               return (
                 <div className="profile__download" key={index}>
-                  <a href={item.url} target="_blank" rel="noreferrer">
+                  <a href={resume} target="_blank" rel="noreferrer">
                     {item.title}
                   </a>
                   <span className="profile__icon">{item.icon}</span>
