@@ -10,8 +10,6 @@ import {
 } from "react-icons/ai";
 import {
   FaHtml5,
-  FaBatteryHalf,
-  FaBatteryFull,
   FaBloggerB,
 } from "react-icons/fa";
 /**Navigation Settings */
