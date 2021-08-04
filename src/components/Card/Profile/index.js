@@ -2,9 +2,15 @@ import React from "react";
 import "./Profile.scss";
 import { Profile as Data } from "../../../data/Setting";
 import Typewriter from "typewriter-effect";
-import resume from "../../../download/resume.pdf"
-
+import resume from "../../../download/resume.pdf";
+import ReactGA from "react-ga";
 function index() {
+  const gaClickHandler = () => {
+    ReactGA.event({
+      category:"Link",
+      action:"resume download"
+    })
+  }
   return (
     <>
       {Data.map((user, index) => {
@@ -24,8 +30,8 @@ function index() {
                 options={{
                   strings: user.postion,
                   autoStart: true,
-                  loop:true,
-                  delay:100
+                  loop: true,
+                  delay: 100,
                 }}
               />
               {/* {user.postion} */}
@@ -46,7 +52,7 @@ function index() {
             {user.download.map((item, index) => {
               return (
                 <div className="profile__download" key={index}>
-                  <a href={resume} target="_blank" rel="noreferrer">
+                  <a href={resume} target="_blank" onClick={gaClickHandler} rel="noreferrer">
                     {item.title}
                   </a>
                   <span className="profile__icon">{item.icon}</span>
