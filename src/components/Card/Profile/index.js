@@ -13,7 +13,8 @@ function index() {
               <img
                 src={require(`../../../images/Profile/${user.image}`).default}
                 alt="profile"
-                style={{ width: "100%" }}
+                width="100%"
+                height="100%"
               />
             </div>
             <div className="profile__name">{user.name}</div>
