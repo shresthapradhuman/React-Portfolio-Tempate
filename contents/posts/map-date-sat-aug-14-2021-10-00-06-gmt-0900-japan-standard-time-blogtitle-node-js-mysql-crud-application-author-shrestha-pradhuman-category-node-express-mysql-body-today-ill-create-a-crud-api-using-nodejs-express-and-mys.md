@@ -5,7 +5,7 @@ category: Node, Express, MySQL
 date: 2021-08-14T01:00:06.580Z
 blogImage: https://www.tutorialkart.com/wp-content/uploads/2017/09/nodejs-mysql.png
 ---
-Today I'll create a CRUD API using NodeJS, Express, And MySQL. So, without wasting time let's start.
+I'll create a CRUD API using NodeJS, Express, And MySQL. So, without wasting time let's start.
 
 ### Prerequisites and required applications
 
