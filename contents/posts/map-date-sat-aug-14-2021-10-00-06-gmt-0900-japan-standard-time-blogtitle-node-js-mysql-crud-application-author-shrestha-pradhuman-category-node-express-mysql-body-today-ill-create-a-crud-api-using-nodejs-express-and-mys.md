@@ -7,7 +7,7 @@ blogImage: https://www.tutorialkart.com/wp-content/uploads/2017/09/nodejs-mysql.
 ---
 I'll create a CRUD API using NodeJS, Express, And MySQL. So, without wasting time let's start.
 
-### Prerequisites and required applications
+Prerequisites and required applications
 
 NodeJS**:** open-source, cross-platform runtime environment for developing server-side and networking applications. One should have a basic understanding of NodeJS.
 ExpressJS**:**  web frameworks for NodeJS. Built on top NodeJS  HTTP module, which helps for routing, middleware, view system, etc.
