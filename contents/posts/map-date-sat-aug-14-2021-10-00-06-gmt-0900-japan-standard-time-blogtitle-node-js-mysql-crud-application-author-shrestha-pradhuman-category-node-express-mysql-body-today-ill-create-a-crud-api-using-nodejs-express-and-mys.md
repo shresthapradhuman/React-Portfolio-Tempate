@@ -14,7 +14,7 @@ ExpressJS**:**  web frameworks for NodeJS. Built on top NodeJS  HTTP module, 
 MySQL**:**  open-source relational database management system.\
 IDE (integrated development environment): I am using visual studio code in my case mine. You can choose whatever you like.
 
-let's start the project. create a project directory and intialize the project.
+let's start the project. create a project directory and initialize the project.
 
 ```
 $ mkdir crud && cd crud
