@@ -9,9 +9,9 @@ I'll create a CRUD API using NodeJS, Express, And MySQL. So, without wasting tim
 
 ### Prerequisites and required applications
 
-NodeJS**:** open-source, cross-platform runtime environment for developing server-side and networking applications. One should have a basic understanding of NodeJS.\
-ExpressJS**:**  web frameworks for NodeJS. Built on top NodeJS  HTTP module, which helps for routing, middleware, view system, etc.\
-MySQL**:**  open-source relational database management system.\
+NodeJS**:** open-source, cross-platform runtime environment for developing server-side and networking applications. One should have a basic understanding of NodeJS.
+ExpressJS**:**  web frameworks for NodeJS. Built on top NodeJS  HTTP module, which helps for routing, middleware, view system, etc.
+MySQL**:**  open-source relational database management system.
 IDE (integrated development environment): I am using visual studio code in my case mine. You can choose whatever you like.
 
 let's start the project. create a project directory and initialize the project.
