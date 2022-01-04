@@ -1,5 +1,5 @@
 ---
-blogTitle: WHAT IS REST API?
+blogTitle: WHAT IS REST API
 author: Shrestha Pradhuman
 category: REST API
 date: 2021-12-31T13:34:51.135Z
