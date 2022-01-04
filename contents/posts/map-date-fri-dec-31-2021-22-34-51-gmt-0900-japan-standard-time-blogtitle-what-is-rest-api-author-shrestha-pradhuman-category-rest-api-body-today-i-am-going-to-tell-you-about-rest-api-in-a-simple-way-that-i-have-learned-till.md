@@ -3,7 +3,7 @@ blogTitle: WHAT IS REST API?
 author: Shrestha Pradhuman
 category: REST API
 date: 2021-12-31T13:34:51.135Z
-blogImage: /images/blog/rest.webp
+blogImage: https://lh3.googleusercontent.com/3KYmpb3ygIx4bcoDK8St-sWYNtDPgmxrzMIKeMeYg6AMu8Lpe8c8Qogr_por6Smo7B3Ahx996Qjmua-KYmkk3k85MuR4OMyZ4_eJHZ4x16CmjW672xVkN0QtzqKErLDdRt73u10qc0_KT01CxTlaQkFQQN8QoYvn8Gmqs5eT6iLKx1Wu1IuuRLQZUaO7bY-ZyTlyHsHJ2wWCkoB37E0OEZhsT8eVU0nsCVjyWgWugdd94ME9CMnvJF_6oLgDvMnkB5AujaxK9EhL8XOV84aW7nfv4cee69uf4qbC-26Xt7qotPRZNusXIuhXYYM3EU5saEa4DhkOwymdchiJ8om5H4kJMW3pyEJ4gczcVdHZRNRPq0G7rgM2Nbn1Zyp4WdGdghwhGGbvbVKt2k-UN7dQikVCklGepBB3iw0ev4hBSqrayG8OrrPVS-KvNHlfY8Cx3wJZsnxrkKlH1p1kgyO_iUhldfZbosVJsIzDIIO6NEntIAhS6jfKmTvVEO7Pq9g2Sty6VMfseazevQ72HM_YWAFFrvcxBMSaLvrWWHcoqf8jLWbjU1-0ms6EhlWec8zIqULWsN2-6ra6dHFOylK-ka4qex8DeaLqbde61iq5lJdw6-ANmjrgWDYtm5DMv7Kb7QnkG5XAlMJsUs_O_9mJMZs1LcmPTDJ-DDYU9uYgOeXfWVjSfZe2eC1F24hYJfkwWcQydgKd8pNCtZwkmb7oAnk=w940-h788-no?authuser=0
 ---
 Today I am going to tell you about REST API in a simple way that I have learned till now. First,  we will look at API which stands for "Application Program Interface". 
 
