@@ -1,6 +1,6 @@
 import React from 'react'
-import { Information as Data } from "../../data/Setting";
-import Form from '../../components/Form/Contact/Form';
+import { Information as Data } from "../data/Setting";
+import Form from '../components/Form/Contact/Form';
 
 function Contact() {
     return (

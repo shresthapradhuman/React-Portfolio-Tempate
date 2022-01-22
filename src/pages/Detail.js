@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../styles/pages/Detail.scss'
-import data from '../../data/blog.json'
+import '../styles/pages/Detail.scss'
+import data from '../data/blog.json'
 import { useState, useEffect } from 'react';
 import { FaFacebookF, FaTwitter, FaStackOverflow } from "react-icons/fa";
 import Markdown from "markdown-to-jsx";

@@ -8,10 +8,7 @@ import {
   AiOutlineCloudDownload,
   AiOutlineMobile,
 } from "react-icons/ai";
-import {
-  FaHtml5,
-  FaBloggerB,
-} from "react-icons/fa";
+import { FaHtml5, FaBloggerB } from "react-icons/fa";
 /**Navigation Settings */
 export const Navbar = [
   {
@@ -44,20 +41,16 @@ export const Navbar = [
 export const Profile = [
   {
     image: "profile.jpg",
-    name: "Shrestha Pradhuman",
-    postion: [
-      "Freelancer",
-      "Front-end Developer",
-      "Back-end Developer"
-    ],
+    name: "Jhon Doe",
+    postion: ["Freelancer", "Front-end Developer", "Back-end Developer"],
     social: [
       {
         icon: <AiFillGithub />,
-        url: "https://github.com/shresthapradhuman",
+        url: "https://github.com",
       },
       {
         icon: <FaBloggerB />,
-        url: "https://codewithshrestha.blogspot.com/",
+        url: "https://blogspot.com/",
       },
     ],
     download: [
@@ -74,15 +67,15 @@ const d = new Date();
 const year = d.getFullYear();
 export const Information = [
   {
-    desc: "<strong>Hello! I'm Shrestha Pradhuman.</strong> Web Developer From Tokyo, Japan. I am passionate about Web Designing. I have rich experience in Magento, also I'm good at WordPress. I love to talk with you about our unique.",
+    desc: "<strong>Hello! I'm Jhon Doe.</strong> Web Developer From NewYork. I am passionate about Web Designing. I have rich experience in web development, also I'm good at WordPress. I love to talk with you about our unique.",
     info: [
       {
-        age: year - 1989,
-        resident: "Nepal",
+        age: year - 2002,
+        resident: "Mexico",
         freelancer: "Available",
-        address: "Tokyo, Japan",
-        email: "ShresthaPradhuman2018@gmail.com",
-        contact: "+8107084252738",
+        address: "NewYork",
+        email: "mail@example.com",
+        contact: "+1 4349959494",
       },
     ],
   },
@@ -106,21 +99,21 @@ export const Service = [
 export const Education = [
   {
     year: "2010-2013",
-    institute: "Brightland College",
-    country: "Nepal",
+    institute: "Harvard University",
+    country: "USA",
     description: "Bachelor's Degree in Business Studies With Major Finance",
   },
   {
     year: "2008-2010",
-    institute: "Meisei Institute Of Cybernetics",
-    country: "Japan",
+    institute: "Brixton College",
+    country: "USA",
     description:
       "Business Introduction, Office Software, Basic Programming, Linux OS Basic Operation, Web Development",
   },
   {
     year: "2020/09-2020/10",
-    institute: "PHP SCHOOL",
-    country: "Ikebukuro, Japan",
+    institute: "Standford",
+    country: "USa",
     description:
       "PHP Basic, MVC Model, Object Oriented Programming, PHP Framework Laravel.",
   },
@@ -130,13 +123,14 @@ export const Experience = [
   {
     year: "2020-Present",
     position: "Web Programmer",
-    company: "Veriteworks.Inc",
-    description: "Developing themes and modules for Magento platform based e-commerce websites",
+    company: "Facebook",
+    description:
+      "Developing themes and modules for Magento platform based e-commerce websites",
   },
   {
     year: "2020/9-2020/12",
     position: "Convience Store Assistant",
-    company: "Family Mart",
+    company: "Walmart",
     description:
       "Stock Order Placement, Banking Transaction, Staff Shift Management, Customer Dealing, and Other Daily Jobs",
   },
@@ -170,23 +164,20 @@ export const Coding = [
 
 export const Language = [
   {
-    title: "Nepali",
-    width: "95%",
+    title: "Spanish",
+    width: "75%",
   },
   {
     title: "Hindi",
-    width: "95%",
+    width: "75%",
   },
   {
     title: "English",
-    width: "80%",
+    width: "90%",
   },
   {
     title: "Japanese",
-    width: "70%",
+    width: "60%",
   },
 ];
 
-export const GA = {
-  REACT_APP_GA_TRACKING_CODE: "UA-202017209-1",
-};

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,21 +9,14 @@ import "./styles/App.scss";
 import "./styles/Box.scss";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Card/Profile";
-import About from "./pages/frontend/About";
-import Resume from "./pages/frontend/Resume";
-import Work from "./pages/frontend/Work";
-import Blog from "./pages/frontend/Blog";
-import Detail from "./pages/frontend/Detail";
-import Contact from "./pages/frontend/Contact";
-import ReactGA from "react-ga";
-import { GA } from "./data/Setting";
-
+import About from "./pages/About";
+import Resume from "./pages/Resume";
+import Work from "./pages/Work";
+import Blog from "./pages/Blog";
+import Detail from "./pages/Detail";
+import Contact from "./pages/Contact";
 
 function App() {
-  useEffect(() => {
-    ReactGA.initialize(GA.REACT_APP_GA_TRACKING_CODE);
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  },[]);
   return (
     <>
       <div className="container">

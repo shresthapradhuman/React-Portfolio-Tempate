@@ -2,15 +2,7 @@ import React from "react";
 import "./Profile.scss";
 import { Profile as Data } from "../../../data/Setting";
 import Typewriter from "typewriter-effect";
-import resume from "../../../download/resume.pdf";
-import ReactGA from "react-ga";
 function index() {
-  const gaClickHandler = () => {
-    ReactGA.event({
-      category:"Link",
-      action:"resume download"
-    })
-  }
   return (
     <>
       {Data.map((user, index) => {
@@ -52,7 +44,11 @@ function index() {
             {user.download.map((item, index) => {
               return (
                 <div className="profile__download" key={index}>
-                  <a href={resume} target="_blank" onClick={gaClickHandler} rel="noreferrer">
+                  <a
+                    href="/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {item.title}
                   </a>
                   <span className="profile__icon">{item.icon}</span>

@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Card from "../../components/Card/Git/Card";
-import "../../styles/pages/Work.scss";
+import Card from "../components/Card/Git/Card";
+import "../styles/pages/Work.scss";
 
 function Work() {
   const [repos, setRepos] = useState([]);
   const handleClick = async () => {
     const response = await fetch(
-      "https://api.github.com/users/shresthapradhuman/repos",
-      {
-        headers: {
-          Authorization: "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",
-        },
-      }
+      "https://api.github.com/users/shresthapradhuman/repos"
     );
     setRepos(await response.json());
   };

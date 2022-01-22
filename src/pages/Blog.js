@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useRouteMatch } from "react-router";
-import BlogCard from "../../components/Card/Blog";
-import data from "../../data/blog.json";
+import BlogCard from "../components/Card/Blog";
+import data from "../data/blog.json";
 function Blog() {
   const [post, setPost] = useState(data);
   const [message, setMessage] = useState();
@@ -14,7 +14,7 @@ function Blog() {
       let result = data.filter((item) =>
         item.blogTitle.toLowerCase().includes(searchValue.toLowerCase())
       );
-      setMessage(result.length > 0 ? false : true)
+      setMessage(result.length > 0 ? false : true);
       setPost(result);
     } else {
       setPost(data);
@@ -53,7 +53,7 @@ function Blog() {
                   blogText={blog.blogText}
                   image={blog.blogImage}
                   slug={blog.slug}
-                  link = {url}
+                  link={url}
                   key={blog.id}
                 />
               );

@@ -1,10 +1,10 @@
 import React from 'react'
-import Education from '../../section/Education/Education';
+import Education from '../section/Education/Education';
 import { FaBriefcase, FaUniversity, FaCode, FaFlag } from "react-icons/fa";
-import '../../styles/pages/Resume.scss'
-import  Experience  from '../../section/Experience/Experience';
-import Language from '../../section/Language/Language';
-import Coding from '../../section/Coding/Coding';
+import '../styles/pages/Resume.scss'
+import  Experience  from '../section/Experience/Experience';
+import Language from '../section/Language/Language';
+import Coding from '../section/Coding/Coding';
 
 function Resume() {
     return (
