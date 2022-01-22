@@ -5,9 +5,8 @@ function Form() {
   return (
     <>
       <div className="form">
-        <form action="/contact" name="contact" method="post">
+        <form action="/" name="contact" method="post">
           <div className="form__wrapper">
-            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               className="form__input form__input--name"
